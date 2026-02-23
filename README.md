@@ -54,19 +54,28 @@ El puente desde Flutter se realiza a traves de `CommentNativeService` usando `Me
 
 ```yaml
 dependencies:
-  flutter_bloc: ^9.1.1       
-  go_router: ^16.3.0         
-  dio: ^5.1.1               
-  equatable: ^2.0.7          
-  shared_preferences: ^2.2.2 
-  hive: ^2.2.3               
-  hive_flutter: ^1.1.0      
-  path_provider: ^2.0.15     
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+  path_provider: ^2.0.15
+  equatable: ^2.0.7
+  dio: ^5.1.1
+  go_router: ^16.3.0
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
-  flutter_test              
-  build_runner: ^2.4.6        
-  hive_generator: ^2.0.1      
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.1
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
+flutter:
+  uses-material-design: true    
 ```
 
 ## Pasos para Correr el Proyecto
