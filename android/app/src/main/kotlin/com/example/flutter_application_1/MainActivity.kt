@@ -1,9 +1,3 @@
-// MainActivity.kt
-// Configura el MethodChannel para obtener comentarios de un post
-// desde la capa nativa Android (Kotlin). En un contexto eCommerce,
-// delegar llamadas de red al lado nativo permite aprovechar las APIs
-// de networking propias de cada plataforma para cargar resenas de productos.
-
 package com.example.flutter_application_1
 
 import io.flutter.embedding.android.FlutterActivity
@@ -37,7 +31,7 @@ class MainActivity : FlutterActivity() {
             }
     }
 
-    /// Realiza la peticion HTTP nativa a la API de comentarios
+    /// fetchComments desde Kotlin by ID 
     private fun fetchComments(postId: Int, result: MethodChannel.Result) {
         thread {
             try {

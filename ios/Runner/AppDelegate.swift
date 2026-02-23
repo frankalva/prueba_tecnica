@@ -1,9 +1,3 @@
-// AppDelegate.swift
-// Configura el MethodChannel para obtener comentarios de un post
-// desde la capa nativa iOS. En un contexto eCommerce, esto permite
-// delegar llamadas de red pesadas al lado nativo para mejor rendimiento,
-// por ejemplo al cargar resenas de productos desde un backend propio.
-
 import Flutter
 import UIKit
 
@@ -41,7 +35,7 @@ import UIKit
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 
-  /// Realiza la peticion HTTP nativa a la API de comentarios
+  /// Fetch comentarios en base al id del post
   private func fetchComments(postId: Int, result: @escaping FlutterResult) {
     let urlString = "https://jsonplaceholder.typicode.com/comments?postId=\(postId)"
     guard let url = URL(string: urlString) else {
