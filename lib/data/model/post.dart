@@ -1,7 +1,3 @@
-// Modelo de Post obtenido desde la API REST de JSONPlaceholder.
-// En un contexto eCommerce, este modelo representaria un producto
-// o una publicacion dentro de un marketplace, con campos como
-// userId (vendedor), title (nombre del producto) y body (descripcion).
 class Post {
   final int userId;
   final int id;
